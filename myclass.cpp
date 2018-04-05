@@ -9,5 +9,7 @@ void myclass::setX(const int &x)
 
 void myclass::setY(const int &y)
 {
+    _y=(y<0)?y:(-y);
     _y=(y<0)?(-y):y;
+    _y=0;
 }
